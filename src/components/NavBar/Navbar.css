@@ -1,0 +1,94 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 32px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.navbar-email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #282c34;
+    background-color: #eeeeee;
+    font-size: 16px;
+    border: 0.5px solid #d7d7d7;
+    margin-right: 20px;
+    padding: 3px 4px;
+    border-radius: 24px;
+}
+
+.email {
+    margin-left: 20px;
+}
+
+.copy-btn {
+    background-color: #ffffff;
+    color: #282c34;
+    padding: 9px 32px;
+    border-radius: 24px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-left: 20px;
+}
+
+.copy-btn:hover {
+    background-color: #dddddd;
+}
+
+.wrapper {
+    border: 0.5px solid #d7d7d7;
+    padding: 3px 4px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-btn {
+    background-color: #ffffff;
+    color: #282c34;
+    padding: 9px 32px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.navbar-btn:hover {
+    background-color: #dddddd;
+    /* Darker shade for hover effect */
+}
+
+.navbar-link {
+    color: #282c34;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+}
+
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .navbar {
+        display: none; /* Hide the entire navbar */
+    }
+}

@@ -1,0 +1,77 @@
+/* Sketches.css */
+
+.sketches-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #282c34;
+}
+
+.sketches-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sketch-card {
+    position: relative;
+    width: 30%; /* Each card takes 30% width (3 items in a row on larger screens) */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sketch-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.sketch-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Text overlay for artwork names */
+.art-name {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+/* Hover effect for images */
+.sketch-card:hover .sketch-image {
+    transition: opacity 0.3s ease;
+    opacity: 0.8; /* Image fades slightly on hover */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 480px) {
+    .sketch-card {
+        width: 45%; /* Adjust to 48% width for 2 images per row */
+        margin-bottom: 20px; /* Adds space between images vertically */
+    }
+
+    .sketches-gallery {
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-between; /* Ensures images align nicely */
+    }
+}

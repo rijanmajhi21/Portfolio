@@ -1,0 +1,50 @@
+/* Skills.css */
+
+.skills-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.skills-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #282c34;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+}
+
+.skill {
+    padding: 15px 30px;
+    color: #282c34;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 480px) {
+    .skills-section h1 {
+        font-size: 28px;
+    }
+    .skills-list {
+        gap: 10px;
+        justify-content: space-around;
+    }
+    .skill {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
