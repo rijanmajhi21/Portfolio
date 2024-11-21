@@ -20,7 +20,7 @@
         "postcss": "^8.4.49",
         "tailwindcss": "^3.4.14"
     },
-    "homepage": "https://rijanmajhi21.github.io/Portfolio",
+    "homepage": ".",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
